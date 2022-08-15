@@ -1,0 +1,22 @@
+<table class="table table-sm">
+    <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Compañia</th>
+        </tr>
+        </thead>
+    <tr *ngFor="let producto of juguetesService.listProductos">
+        <td>{{ producto.nombre}}</td>
+        <td>{{ producto.restriccionEdad}}</td>
+        <td>{{ producto.precio}}</td>
+        <td>{{ producto.compania}}</td>
+        <td>
+            <i class="far fa-edit fa-lg text-info" (click)="editarProducto(producto)" style="cursor:pointer;"></i>
+        </td>
+        <td>
+            <i class="far fa-trash-alt fa-lg text-danger" (click)="eliminarProducto(producto)" style="cursor:pointer;"></i>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+// @import "~bootstrap/dist/css/bootstrap.css";
+
+input.ng-touched.ng-invalid {
+    border-color: #dc3545;
+}
+
+input.ng-valid{
+    border-color: #28a745
+}
+
+.green-icon{
+    color: #28a745
+}
+
+.red-icon{
+    color: #dc3545;
+}
